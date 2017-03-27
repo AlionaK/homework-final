@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <title>Poll</title>
+</head>
+<body>
+    <h3 style="text-align:center;">Найкращий позашляховик на думку українців</h3>
+    <form action="https://formspree.io/alionka_g@mail.ru" method="POST">
+        <fieldset>
+            <h4><i>Країна*</i></h4>
+            <input type="text" name="country" value="Україна" disabled>
+        </fieldset>
+        <br>
+        <fieldset>
+            <h4><i>Стать*</i></h4>
+            <input type="radio" name="Sex" value="Чол." checked required>Чол.
+            <input type="radio" name="Sex" value="Жін.">Жін.
+        </fieldset>
+        <br>
+        <fieldset>
+            <h4><i>Вік*</i></h4>
+            <input list="age" name="Age" required>
+                <datalist id="age">
+                    <option value="18-20">
+                    <option value="21-29">
+                    <option value="30-49">
+                    <option value="50-і більше">
+                </datalist>
+        </fieldset>
+        <br>
+        <fieldset>
+            <h4><i>Маркою якого позашляховика ви володієте зараз?*</i></h4>
+            <label><input type="radio" name="Owner now" value="Toyota" required>Toyota</label>
+            <label><input type="radio" name="Owner now" value="Ford">Ford</label>
+            <label><input type="radio" name="Owner now" value="Audi">Audi</label>
+            <label><input type="radio" name="Owner now" value="Mercedes">Mercedes</label>
+            <label><input type="radio" name="Owner now" value="BMW">BMW</label>
+            <label><input type="radio" name="Owner now" value="Lexus">Lexus</label>
+            <label><input type="radio" name="Owner now" value="Owner of other brand now">Інша марка</label>
+            <input type="text" name="Owner now other brand" placeholder="Вкажіть іншу марку">
+        </fieldset>
+        <br>
+        <fieldset>
+            <h4><i>Як би ви оцінили досвід керування своїм авто?*</i></h4>
+            <p>0-абсолютно не задоволений<br>
+            5-абсолютно задоволений</p>
+            <label>0<input type="range" name="Softness of car" min="0" max="5">5 М'якість машини </label><br>
+            <label>0<input type="range" name="Off-road capability" min="0" max="5">5 Проходимість</label><br>
+            <label>0<input type="range" name="Fuel consumption" min="0" max="5">5 Витрати пального</label><br>
+            <label>0<input type="range" name="Acceleration time" min="0" max="5">5 Час розгону</label><br>
+            <label>0<input type="range" name="Engine power" min="0" max="5">5 Потужність двигуна</label><br>
+        </fieldset>
+        <br>
+        <fieldset>
+            <h4><i>Авто яких марок ви розглядали, обираючи своє останнє авто?*</i></h4>
+            <label><input type="checkbox" name="Car maybe potentially" value="Toyota">Toyota</label>
+            <label><input type="checkbox" name="Car maybe potentially" value="Ford">Ford</label>
+            <label><input type="checkbox" name="Car maybe potentially" value="Audi">Audi</label>
+            <label><input type="checkbox" name="Car maybe potentially" value="Mercedes">Mercedes</label>
+            <label><input type="checkbox" name="Car maybe potentially" value="BMW">BMW</label>
+            <label><input type="checkbox" name="Car maybe potentially" value="Lexus">Lexus</label>
+            <label><input type="checkbox" name="Car maybe potentially">Інша марка</label>
+            <label><input type="text" name="Car maybe potentially other brand" placeholder="Вкажіть іншу марку"></label>
+        </fieldset>
+        <br>
+        <fieldset>
+            <h4><i>На скільки дані характеристики були важливими для вас при виборі авто?*</i></h4>
+            <p>1- зовсім другорядний критерій при виборі<br>
+            5-майже єдиний критерій при виборі</p>
+            <label>1<input type="range" name="Particular brand" min="0" max="5">5 Конкретна марка авто</label><br>
+            <label>1<input type="range" name="Safety" min="0" max="5">5 Широкий спектр функцій безпеки та захисту</label><br>
+            <label>1<input type="range" name="Color" min="0" max="5">5 Колір авто, колір та матеріал салону</label><br>
+            <label>1<input type="range" name="Engine" min="0" max="5">5 Характеристики двигуна</label><br>
+            <label>1<input type="range" name="Price" min="0" max="5">5 Ціна</label><br>
+        </fieldset>
+        <br>
+        <fieldset>
+            <label><b><i>Опишіть ваші загальні враження від керування авто*</i></b><br><br><textarea name="message" rows="10" cols="50"></textarea></label>
+        </fieldset>
+        <br>
+        <br>
+        <button type="submit"><img src="img/send.png" height="40" width="40" alt="Button Send"></button>
+        <button type="reset"><img src="img/reset.png" height="40" width="40" alt="Button Reset"></button>
+    </form>
+</body>
+</html>
